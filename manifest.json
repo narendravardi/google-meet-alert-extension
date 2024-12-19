@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Google Meet Reload Alert",
+    "version": "1.0",
+    "description": "Alerts you when reloading a Google Meet page.",
+    "permissions": [
+      "tabs"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://meet.google.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
